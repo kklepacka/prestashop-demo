@@ -12,12 +12,12 @@ Test Teardown    Test Teardown
 Test_login2
     [Documentation]    Test_login2
 
-    Given je suis sur la page d'accueil
-    When Je clique sur le bouton connexion
-    And Je saisi mon login
-    And Je saisi mon mdp
-    And Je clique sur Connexion
-    Then Je verifie que je suis connectée
+    Given je suis sur la page d'accueil "My Store"
+    When Je clique sur le bouton [Connexion]
+    And Je saisi mon 'login'
+    And Je saisi mon `mdp`
+    And Je clique sur {Connexion}
+    Then Je vérifie que dès maintenant je suis connectée
 
 
 *** Keywords ***
